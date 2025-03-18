@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "baguettebox.js": "^1.12.0",
     "framer-motion": "^12.5.0",
     "next": "15.2.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-images": "^1.2.0-beta.7",
+    "react-photo-gallery": "^8.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
