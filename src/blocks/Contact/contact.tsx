@@ -7,7 +7,7 @@ const ContactBlock = () => {
       <div className="container mx-auto items-center justify-center flex">
         <div className="flex flex-col md:flex-row items-start md:items-center  md:gap-0 gap-10">
           {/* Contact Information */}
-          <div className="w-full md:w-[50%] space-y-10">
+          <div className="w-full md:w-[50%] space-y-40">
             <ul className="space-y-7">
               {/* Phone Number */}
               <li>
@@ -90,12 +90,12 @@ const ContactBlock = () => {
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-[60%] text-center">
+          <div className="w-full  text-center">
             <Image
               src="https://res.cloudinary.com/dszkdvuko/image/upload/v1697214253/Kenedi_25_fxxhib.jpg"
               alt="Nikola Jovanovski"
-              width={500}
-              height={500}
+              width={800}
+              height={800}
               className=""
             />
           </div>
