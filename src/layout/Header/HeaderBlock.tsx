@@ -17,7 +17,7 @@ function HeaderBlock() {
   };
 
   const handleClickOutside = (event: any) => {
-    if (galleryDropdownRef.current && !galleryDropdownRef.current.contains(event.target)) {
+    if (galleryDropdownRef.current && !galleryDropdownRef?.current?.contains(event.target)) {
       setOpenDropdown(null);
     }
   };
