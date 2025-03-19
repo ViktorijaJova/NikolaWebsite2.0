@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ContactBlock = () => {
   return (
-    <section className="py-12 px-4" id="features-app-section-2">
+    <section className="py-12 pt-20 px-4" id="features-app-section-2">
       <div className="container mx-auto items-center justify-center flex">
         <div className="flex flex-col md:flex-row items-start md:items-center  md:gap-0 gap-10">
           {/* Contact Information */}

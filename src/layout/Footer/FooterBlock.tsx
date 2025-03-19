@@ -8,7 +8,7 @@ const FooterBlock: React.FC = () => {
     <footer>
       <div className="bg-white">
         <div
-          className="flex md:flex-row flex-col flex-wrap justify-between items-start md:px-40 p-5"
+          className="flex md:flex-row flex-col flex-wrap justify-between items-start lg:px-40 p-5"
         >
           <div id="footer-logo" className="footer-logo mb-5">
             <Link href="/home" passHref>

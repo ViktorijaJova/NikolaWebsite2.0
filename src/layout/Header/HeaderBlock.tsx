@@ -108,14 +108,14 @@ function HeaderBlock() {
       {burgerMenu && (
         <div className="md:hidden relative flex flex-col bg-white text-[#727373] pt-4 pb-6 px-6">
           <Link href="/home" className="block py-2" onClick={() => setBurgerMenu(false)}>
-            Home
+            HOME
           </Link>
           <Link href="/illustrations" className="block py-2" onClick={() => setBurgerMenu(false)}>
             ILLUSTRATIONS
           </Link>
           <div className="relative" ref={galleryDropdownRef}>
             <button onClick={() => toggleDropdown("gallery")} className="flex items-center space-x-2 gap-x-5">
-              <span>BELLA Collections</span>
+              <span>BELLA COLLECTIONS</span>
               <FaChevronDown
                 className={`transition-transform ${openDropdown === "gallery" ? "rotate-180" : "rotate-0"}`}
               />
@@ -123,13 +123,13 @@ function HeaderBlock() {
             {openDropdown === "gallery" && (
               <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-40 py-2 transition-all duration-300">
                 <Link href="/volume-1" className="block px-4 py-2" onClick={() => setBurgerMenu(false)}>
-                  Vol.1
+                  VOL.1
                 </Link>
                 <Link href="/volume-2" className="block px-4 py-2" onClick={() => setBurgerMenu(false)}>
-                  Vol.2
+                  VOL.2
                 </Link>
                 <Link href="/volume-3" className="block px-4 py-2" onClick={() => setBurgerMenu(false)}>
-                  Vol.3
+                  VOL.3
                 </Link>
               </div>
             )}
@@ -141,7 +141,7 @@ function HeaderBlock() {
             ABOUT
           </Link>
           <Link href="/contact" className="block py-2" onClick={() => setBurgerMenu(false)}>
-            Contact
+            CONTACT
           </Link>
         </div>
       )}

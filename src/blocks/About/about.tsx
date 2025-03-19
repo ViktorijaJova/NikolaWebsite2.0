@@ -8,7 +8,7 @@ interface BlockComponentProps {
 const AboutBlock: React.FC<BlockComponentProps> = ({ imageUrl }) => {
   return (
     <section>
-      <div id="features-app-section-3" className="bg-gray-100 py-10">
+      <div id="features-app-section-3" className="bg-gray-100 py-10 pt-28">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-20">
             <div>
