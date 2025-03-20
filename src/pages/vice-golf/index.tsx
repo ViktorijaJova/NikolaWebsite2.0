@@ -1,7 +1,5 @@
 // pages/index.tsx
 import React, { useEffect, useState } from 'react';
-import MyDocument from '../../blocks/PdfViewer/PdfViewer';
-import { PDFViewer } from '@react-pdf/renderer';
 
 const Home = () => {
   const [isBrowser, setIsBrowser] = useState(false);
@@ -12,15 +10,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-full h-full bg-gray-100 p-4">
-   
-      
-      <div>
+    <div className="flex items-center pt-10 justify-center  bg-gray-50 p-4">
+      <div className="w-full max-w-[1920px] bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Import PDF from the public folder */}
         <iframe
           src="/golf.pdf" // Reference the PDF directly from the public folder
-          width="100%"
-          height="900px"
+          className="w-[100%] h-[400px] sm:h-[600px] md:h-[800px] border-none"
+          title="PDF Viewer"
         />
       </div>
     </div>

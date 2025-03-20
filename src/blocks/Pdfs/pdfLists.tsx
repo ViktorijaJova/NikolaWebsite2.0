@@ -1,33 +1,33 @@
 import React from 'react';
 import ProductList from '../ProductList/ProductList';
 
-import imgOne from '../../layout/Footer/assets/logo.png';
-import imgTwo from '../../layout/Footer/assets/logo.png';
-import imgThree from '../../layout/Footer/assets/logo.png';
+import imgOne from '../../../public/nikola.png';
+import imgTwo  from '../../../public/vice3.png';
+import imgThree  from '../../../public/third.png';
 
 const Monographs = () => {
-  const sectionTitle = 'Monographs';
+  const sectionTitle = 'Case Studies';
 
   // Define monographs data here
   const monographs = [
-    { imgProduct: imgOne, titleProduct: 'VICE GOLF', linkProduct: '/vice-golf' },
+    { imgProduct: imgOne, titleProduct: 'THE MODS', linkProduct: '/the-mods' },
     { imgProduct: imgTwo, titleProduct: 'VICE GOLF', linkProduct: '/vice-golf' },
-    { imgProduct: imgThree, titleProduct: 'VICE GOLF', linkProduct: '/vice-golf' },
+    { imgProduct: imgThree, titleProduct: 'Equestrian Collection', linkProduct: '/equestrian-collection' },
   ];
 
   return (
     <>
-      <section className="relative lg:block">
+      <section className="relative lg:block pt-10">
         <div
           className="z-0 has-overlay absolute top-0 left-0 w-full overflow-hidden"
           style={{ minHeight: 420 }}
         >
-          <div className="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-gradient-to-r from-alkLightBlue to-alkPurple mix-blend-multiply" />
+          <div className="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat " />
         </div>
 
         <div className="container relative flex m-auto pt-20" style={{ minHeight: 320 }}>
           <div className="w-full">
-            <h1 className="text-3xl text-white font-normal text-center">{sectionTitle}</h1>
+            <h1 className="text-3xl text-[#727373] font-normal text-center">{sectionTitle}</h1>
           </div>
         </div>
 

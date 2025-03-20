@@ -56,9 +56,7 @@ function HeaderBlock() {
 
         {/* Desktop Navigation */}
         <nav className={`md:flex hidden gap-x-10 px-4 text-[14px] lg:text-[16px] items-center transition-colors duration-300 ${isScrolled ? "text-[#727373]" : "text-[#727373]"}`}>
-          <Link href="/home" className="hover:text-gray">
-            HOME
-          </Link>
+        
           <Link href="/illustrations" className="hover:text-gray">
             ILLUSTRATIONS
           </Link>
@@ -86,6 +84,9 @@ function HeaderBlock() {
 
           <Link href="/tech-drawings" className="hover:text-gray">
             TECHNICAL DRAWINGS
+          </Link>
+          <Link href="/projects" className="hover:text-gray">
+            CASE STUDIES
           </Link>
           <Link href="/about" className="hover:text-gray">
             ABOUT
@@ -136,6 +137,9 @@ function HeaderBlock() {
           </div>
           <Link href="/tech-drawings" className="block py-2" onClick={() => setBurgerMenu(false)}>
             TECHNICAL DRAWINGS
+          </Link>
+          <Link href="/projects" className="hover:text-gray">
+            CASE STUDIES
           </Link>
           <Link href="/about" className="block py-2" onClick={() => setBurgerMenu(false)}>
             ABOUT
