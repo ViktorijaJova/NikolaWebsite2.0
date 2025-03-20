@@ -47,7 +47,7 @@ const AnimatedImages: React.FC<AnimatedImagesProps> = ({ images, title }) => {
             width={400}
             height={400}
             onClick={() => openLightbox(index)} // Open the lightbox on click
-            className="  py-4 md:py-7 max-h-[95%]"
+            className="  py-4 cursor-pointer md:py-7 max-h-[95%]"
           />
         ))}
       </div>
