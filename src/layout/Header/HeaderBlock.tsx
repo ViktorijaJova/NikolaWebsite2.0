@@ -138,7 +138,7 @@ function HeaderBlock() {
           <Link href="/tech-drawings" className="block py-2" onClick={() => setBurgerMenu(false)}>
             TECHNICAL DRAWINGS
           </Link>
-          <Link href="/projects" className="hover:text-gray">
+          <Link href="/projects" className="hover:text-gray" onClick={() => setBurgerMenu(false)}>
             CASE STUDIES
           </Link>
           <Link href="/about" className="block py-2" onClick={() => setBurgerMenu(false)}>
