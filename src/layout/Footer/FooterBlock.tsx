@@ -27,10 +27,10 @@ const FooterBlock: React.FC = () => {
             <div className="text-sm uppercase text-darkGrey font-extralight">
               Art Work
             </div>
-            <a className="my-3 block" href="illustrations.html">
+            <a className="my-3 block" href="/illustrations">
               Illustrations
             </a>
-            <a className="my-3 block" href="tech-drawings.html">
+            <a className="my-3 block" href="/tech-drawings">
               Technical Drawings
             </a>
           </div>
@@ -40,13 +40,13 @@ const FooterBlock: React.FC = () => {
             <div className="text-sm uppercase text-darkYellow font-extralight">
               Collections Bella Edition
             </div>
-            <a className="my-3 block" href="Vol1.html">
+            <a className="my-3 block" href="/volume-1">
               Vol. 1
             </a>
-            <a className="my-3 block" href="Vol2.html">
+            <a className="my-3 block" href="/volume-2">
               Vol. 2
             </a>
-            <a className="my-3 block" href="Vol3.html">
+            <a className="my-3 block" href="/volume-3">
               Vol. 3
             </a>
           </div>
