@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 400);
+      setIsMobile(window.innerWidth < 768); // Show button only for mobile (< 768px)
     };
 
     handleResize(); // Set initial state
@@ -24,7 +24,14 @@ const Home = () => {
   return (
     <div className="flex items-center justify-center pt-10 bg-gray-50 p-4">
       <div className="w-full max-w-[1920px] bg-white rounded-lg shadow-lg overflow-hidden">
-        {isMobile ? (
+        {!isMobile ? ( // Tablets & desktops get the iframe
+          <iframe
+            key="pdf-viewer"
+            src="/mods.pdf"
+            className="w-[100%] h-[400px] sm:h-[600px] md:h-[800px] border-none"
+            title="PDF Viewer"
+          />
+        ) : ( // Only mobile devices get the button
           <div className="text-center p-4 pt-40">
             <Image width={400} height={400} src={theMods} alt="mods" />
             <p className="my-2 text-[#1f2021]">Click below to view the case study</p>
@@ -37,13 +44,6 @@ const Home = () => {
               Open PDF
             </a>
           </div>
-        ) : (
-          <iframe
-            key="pdf-viewer"
-            src="/mods.pdf"
-            className="w-[100%] h-[400px] sm:h-[600px] md:h-[800px] border-none"
-            title="PDF Viewer"
-          />
         )}
       </div>
     </div>
