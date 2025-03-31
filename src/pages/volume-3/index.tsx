@@ -42,7 +42,7 @@ export default function Home() {
   ];
   return (
     <div>
-      <SpacingBlock size="m"></SpacingBlock>
+      <SpacingBlock size="l"></SpacingBlock>
 
       <AnimatedImages
         title="

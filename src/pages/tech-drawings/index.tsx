@@ -20,7 +20,7 @@ export default function Home() {
       ];
   return (
     <div>
-      <SpacingBlock size="m"></SpacingBlock>
+      <SpacingBlock size="l"></SpacingBlock>
       <TechnicalDrawings
         title="TECHNICAL DRAWINGS"
         images={photos}

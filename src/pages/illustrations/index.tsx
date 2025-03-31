@@ -79,7 +79,7 @@ export default function Home() {
   ];
   return (
     <div>
-      <SpacingBlock size="m"></SpacingBlock>
+      <SpacingBlock size="l"></SpacingBlock>
       <IllustrationBlock
         desc={`FW 20 READY-TO-WEAR \n
 The MODS were an incredible 1960's youth sub-culture who shared a common desire to embrace a new found finanical and parental freedom and to stand out above the crowd with regards to originality in fashion, music and social status and what they achieved still infuences aspecs of contemporary life.`}

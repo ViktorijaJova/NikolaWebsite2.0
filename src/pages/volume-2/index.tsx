@@ -36,7 +36,7 @@ export default function Home() {
   ];
   return (
     <div>
-            <SpacingBlock size='m'></SpacingBlock>
+            <SpacingBlock size='l'></SpacingBlock>
 
       <AnimatedImages
         title="SECOND EDITION SS/22 FW/22-23"

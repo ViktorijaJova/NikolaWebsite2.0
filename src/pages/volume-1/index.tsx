@@ -39,7 +39,7 @@ export default function Home() {
   ];
   return (
     <div>
-      <SpacingBlock size='m'></SpacingBlock>
+      <SpacingBlock size='l'></SpacingBlock>
       <AnimatedImages
         title="First Edition SS/21 FW/21-22"
         images={images}
