@@ -34,7 +34,7 @@ const AnimatedImages: React.FC<AnimatedImagesProps> = ({ images, title }) => {
 
   
   return (
-    <div className=" lg:px-40 md:px-10 px-4 pt-20 flex flex-col relative w-full h-full  items-center justify-center">
+    <div className=" lg:px-40 md:px-10 px-4 sm:pt-20 pt-[25%] flex flex-col relative w-full h-full  items-center justify-center">
       <div className=" leading-9 font-extralight text-2xl text-[#1f2021]">
         {title}
       </div>

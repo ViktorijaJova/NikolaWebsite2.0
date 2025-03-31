@@ -51,7 +51,7 @@ function HeaderBlock() {
     >
       <div className="container mx-auto flex items-center justify-between h-[60px] px-4 md:px-8 transition-all duration-300">
         <Link href="/home">
-          <span className="text-[#727373]">NIKOLA</span>
+          <span className="text-[#727373] font-bold">NIKOLA</span>
         </Link>
 
         {/* Desktop Navigation */}
