@@ -90,7 +90,7 @@ const AnimatedImages: React.FC<AnimatedImagesProps> = ({ images, title }) => {
               {/* Close Button */}
               <button
                 onClick={closeLightbox}
-                className="absolute top-[12%] md:top-[10%] lg:top-[12%] right-[8%] text-white bg-gray-800 p-2 px-3 sm:p-3 sm:px-5 rounded-full"
+                className="absolute top-[17%] md:top-[12%] lg:top-[12%] right-[8%] text-white bg-gray-800 p-2 px-3 sm:p-3 sm:px-5 rounded-full"
               >
                 X
               </button>

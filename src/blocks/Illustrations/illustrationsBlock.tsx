@@ -60,46 +60,46 @@ const IllustrationBlock: React.FC<IllustrationsProps> = ({ images, title ,desc})
 
       {/* Lightbox (Carousel) */}
       {lightboxIsOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-white ">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-white ">
           <div className="hs-carousel flex   justify-center text-center overflow-hidden w-full min-h-96 ">
-            <div className="hs-carousel-body absolute  top-0 bottom-0   items-center  justify-center text-center flex flex-nowrap transition-transform duration-700">
-              <div className="hs-carousel-slide w-full flex items-center justify-center">
-                <Image
+          <div className="hs-carousel-body absolute  top-0 bottom-0   items-center  justify-center text-center flex flex-nowrap transition-transform duration-700">
+          <div className="hs-carousel-slide w-full flex items-center justify-center">
+          <Image
                   src={images[currentImage]}
                   alt={`Carousel Image ${currentImage + 1}`}
                   width={600}
                   height={600}
-                  className="w-full h-full flex items-center justify-center"
+                  className="flex items-center justify-center"
                 />
               </div>
             </div>
           </div>
 
           {/* Carousel Controls */}
-          <div className="absolute  px-20 md:pt-0 pt-[95%]  inset-y-0 left-0 flex items-center">
-            <button
-              onClick={prevImage}
-              className="hs-carousel-prev text-2xl text-white bg-gray-800 p-5 px-8 rounded-full hover:bg-gray-600"
-            >
-              &#8249;
-            </button>
-          </div>
-          <div className="absolute px-20  md:pt-0 pt-[95%]  inset-y-0 right-0 flex items-center">
-            <button
-              onClick={nextImage}
-              className="hs-carousel-next text-2xl text-white bg-gray-800 p-5 px-8 rounded-full hover:bg-gray-600"
-            >
-              &#8250;
-            </button>
-          </div>
+          <div className="absolute lg:px-20 px-4 md:pt-0 pt-[95%]  inset-y-0 left-0 flex items-center">
+                <button
+                  onClick={prevImage}
+                  className="hs-carousel-prev md:text-2xl text-white bg-gray-800 p-2 px-3 md:p-5 md:px-8 rounded-full hover:bg-gray-600"
+                >
+                  &#8249;
+                </button>
+              </div>
+              <div className="absolute lg:px-20 px-4 md:pt-0 pt-[95%]  inset-y-0 right-0 flex items-center">
+                <button
+                  onClick={nextImage}
+                  className="hs-carousel-next md:text-2xl text-white bg-gray-800 p-2 px-3 md:p-5 md:px-8 rounded-full hover:bg-gray-600"
+                >
+                  &#8250;
+                </button>
+              </div>
 
           {/* Close Button */}
           <button
-            onClick={closeLightbox}
-            className="absolute top-[10%] right-[8%] text-white bg-gray-800 p-3 px-5 rounded-full"
-          >
-            X
-          </button>
+                onClick={closeLightbox}
+                className="absolute top-[17%] md:top-[12%] lg:top-[12%] right-[8%] text-white bg-gray-800 p-2 px-3 sm:p-3 sm:px-5 rounded-full"
+              >
+                X
+              </button>
         </div>
       )}
     </div>
